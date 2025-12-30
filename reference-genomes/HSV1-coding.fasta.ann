@@ -1,0 +1,155 @@
+123288 77 11
+0 lcl|NC_001806.2_cds_YP_009137073.1_1 [gene=RL1] [locus_tag=HHV1gp00p77] [db_xref=GeneID:2703395] [protein=neurovirulence protein ICP34.5] [protein_id=YP_009137073.1] [location=513..1259] [gbkey=CDS]
+0 747 0
+0 lcl|NC_001806.2_cds_YP_009137074.1_2 [gene=RL2] [locus_tag=HHV1gp00p76] [db_xref=GeneID:2703389] [protein=ubiquitin E3 ligase ICP0] [protein_id=YP_009137074.1] [location=join(2262..2318,3084..3750,3887..5490)] [gbkey=CDS]
+747 2328 0
+0 lcl|NC_001806.2_cds_YP_009137075.1_3 [gene=UL1] [locus_tag=HHV1gp00p75] [db_xref=GeneID:2703393] [protein=envelope glycoprotein L] [protein_id=YP_009137075.1] [location=9338..10012] [gbkey=CDS]
+3075 675 0
+0 lcl|NC_001806.2_cds_YP_009137076.1_4 [gene=UL2] [locus_tag=HHV1gp00p74] [db_xref=GeneID:2703370] [protein=uracil-DNA glycosylase] [protein_id=YP_009137076.1] [location=9885..10889] [gbkey=CDS]
+3750 1005 0
+0 lcl|NC_001806.2_cds_YP_009137077.1_5 [gene=UL3] [locus_tag=HHV1gp00p73] [db_xref=GeneID:2703461] [protein=nuclear protein UL3] [protein_id=YP_009137077.1] [location=10991..11665] [gbkey=CDS]
+4755 675 0
+0 lcl|NC_001806.2_cds_YP_009137078.1_6 [gene=UL4] [locus_tag=HHV1gp00p71] [db_xref=GeneID:2703362] [protein=nuclear protein UL4] [protein_id=YP_009137078.1] [location=complement(11824..12423)] [gbkey=CDS]
+5430 600 0
+0 lcl|NC_001806.2_cds_YP_009137079.1_7 [gene=UL5] [locus_tag=HHV1gp00p72] [db_xref=GeneID:2703420] [protein=helicase-primase helicase subunit] [protein_id=YP_009137079.1] [location=complement(12484..15132)] [gbkey=CDS]
+6030 2649 0
+0 lcl|NC_001806.2_cds_YP_009137080.1_8 [gene=UL6] [locus_tag=HHV1gp00p70] [db_xref=GeneID:2703429] [protein=capsid portal protein] [protein_id=YP_009137080.1] [location=15131..17161] [gbkey=CDS]
+8679 2031 0
+0 lcl|NC_001806.2_cds_YP_009137081.1_9 [gene=UL7] [locus_tag=HHV1gp00p69] [db_xref=GeneID:2703431] [protein=tegument protein UL7] [protein_id=YP_009137081.1] [location=17136..18026] [gbkey=CDS]
+10710 891 0
+0 lcl|NC_001806.2_cds_YP_009137082.1_10 [gene=UL8] [locus_tag=HHV1gp00p67] [db_xref=GeneID:2703432] [protein=helicase-primase subunit] [protein_id=YP_009137082.1] [location=complement(18225..20477)] [gbkey=CDS]
+11601 2253 0
+0 lcl|NC_001806.2_cds_YP_009137083.1_11 [gene=UL9] [locus_tag=HHV1gp00p68] [db_xref=GeneID:2703434] [protein=DNA replication origin-binding helicase] [protein_id=YP_009137083.1] [location=complement(20705..23260)] [gbkey=CDS]
+13854 2556 0
+0 lcl|NC_001806.2_cds_YP_009137084.1_12 [gene=UL10] [locus_tag=HHV1gp00p66] [db_xref=GeneID:2703379] [protein=envelope glycoprotein M] [protein_id=YP_009137084.1] [location=23205..24626] [gbkey=CDS]
+16410 1422 0
+0 lcl|NC_001806.2_cds_YP_009137085.1_13 [gene=UL11] [locus_tag=HHV1gp00p62] [db_xref=GeneID:24271464] [protein=myristylated tegument protein] [protein_id=YP_009137085.1] [location=complement(24802..25092)] [gbkey=CDS]
+17832 291 0
+0 lcl|NC_001806.2_cds_YP_009137086.1_14 [gene=UL12] [locus_tag=HHV1gp00p63] [db_xref=GeneID:24271463] [protein=deoxyribonuclease] [protein_id=YP_009137086.1] [location=complement(25008..26888)] [gbkey=CDS]
+18123 1881 0
+0 lcl|NC_001806.2_cds_YP_009137087.1_15 [gene=UL13] [locus_tag=HHV1gp00p64] [db_xref=GeneID:2703383] [protein=tegument serine/threonine protein kinase] [protein_id=YP_009137087.1] [location=complement(26947..28503)] [gbkey=CDS]
+20004 1557 0
+0 lcl|NC_001806.2_cds_YP_009137088.1_16 [gene=UL14] [locus_tag=HHV1gp00p65] [db_xref=GeneID:2703384] [protein=tegument protein UL14] [protein_id=YP_009137088.1] [location=complement(28257..28916)] [gbkey=CDS]
+21561 660 0
+0 lcl|NC_001806.2_cds_YP_009137089.1_17 [gene=UL15] [locus_tag=HHV1gp00p61] [db_xref=GeneID:2703385] [protein=DNA packaging terminase subunit 1] [protein_id=YP_009137089.1] [location=join(29021..30049,33636..34814)] [gbkey=CDS]
+22221 2208 0
+0 lcl|NC_001806.2_cds_YP_009137090.1_18 [gene=UL16] [locus_tag=HHV1gp00p59] [db_xref=GeneID:24271465] [protein=tegument protein UL16] [protein_id=YP_009137090.1] [location=complement(30175..31296)] [gbkey=CDS]
+24429 1122 0
+0 lcl|NC_001806.2_cds_YP_009137091.1_19 [gene=UL17] [locus_tag=HHV1gp00p60] [db_xref=GeneID:2703388] [protein=DNA packaging tegument protein UL17] [protein_id=YP_009137091.1] [location=complement(31387..33498)] [gbkey=CDS]
+25551 2112 0
+0 lcl|NC_001806.2_cds_YP_009137092.1_20 [gene=UL18] [locus_tag=HHV1gp00p58] [db_xref=GeneID:2703366] [protein=capsid triplex subunit 2] [protein_id=YP_009137092.1] [location=complement(35096..36052)] [gbkey=CDS]
+27663 957 0
+0 lcl|NC_001806.2_cds_YP_009137093.1_21 [gene=UL19] [locus_tag=HHV1gp00p56] [db_xref=GeneID:2703368] [protein=major capsid protein] [protein_id=YP_009137093.1] [location=complement(36405..40529)] [gbkey=CDS]
+28620 4125 0
+0 lcl|NC_001806.2_cds_YP_009137094.1_22 [gene=UL20] [locus_tag=HHV1gp00p57] [db_xref=GeneID:2703371] [protein=envelope protein UL20] [protein_id=YP_009137094.1] [location=complement(40821..41489)] [gbkey=CDS]
+32745 669 0
+0 lcl|NC_001806.2_cds_YP_009137095.1_23 [gene=UL21] [locus_tag=HHV1gp00p55] [db_xref=GeneID:2703372] [protein=tegument protein UL21] [protein_id=YP_009137095.1] [location=42075..43682] [gbkey=CDS]
+33414 1608 0
+0 lcl|NC_001806.2_cds_YP_009137096.1_24 [gene=UL22] [locus_tag=HHV1gp00p54] [db_xref=GeneID:24271466] [protein=envelope glycoprotein H] [protein_id=YP_009137096.1] [location=complement(43867..46383)] [gbkey=CDS]
+35022 2517 0
+0 lcl|NC_001806.2_cds_YP_009137097.1_25 [gene=UL23] [locus_tag=HHV1gp00p53] [db_xref=GeneID:24271467] [protein=involved in nucleotide metabolism] [protein_id=YP_009137097.1] [location=complement(46673..47803)] [gbkey=CDS]
+37539 1131 0
+0 lcl|NC_001806.2_cds_YP_009137098.1_26 [gene=UL24] [locus_tag=HHV1gp00p52] [db_xref=GeneID:24271468] [protein=nuclear protein UL24] [protein_id=YP_009137098.1] [location=47738..48547] [gbkey=CDS]
+38670 810 0
+0 lcl|NC_001806.2_cds_YP_009137099.1_27 [gene=UL25] [locus_tag=HHV1gp00p51] [db_xref=GeneID:2703377] [protein=DNA packaging tegument protein UL25] [protein_id=YP_009137099.1] [location=48814..50556] [gbkey=CDS]
+39480 1743 0
+0 lcl|NC_001806.2_cds_YP_009137100.1_28 [gene=UL26] [locus_tag=HHV1gp00p50] [db_xref=GeneID:2703453] [protein=capsid maturation protease] [protein_id=YP_009137100.1] [location=50810..52717] [gbkey=CDS]
+41223 1908 0
+0 lcl|NC_001806.2_cds_YP_009137101.1_29 [gene=UL26.5] [locus_tag=HHV1gp00p49] [db_xref=GeneID:2703454] [protein=capsid scaffold protein] [protein_id=YP_009137101.1] [location=51728..52717] [gbkey=CDS]
+43131 990 0
+0 lcl|NC_001806.2_cds_YP_009137102.1_30 [gene=UL27] [locus_tag=HHV1gp00p48] [db_xref=GeneID:24271469] [protein=envelope glycoprotein B] [protein_id=YP_009137102.1] [location=complement(53081..55795)] [gbkey=CDS]
+44121 2715 0
+0 lcl|NC_001806.2_cds_YP_009137103.1_31 [gene=UL28] [locus_tag=HHV1gp00p47] [db_xref=GeneID:2703457] [protein=DNA packaging terminase subunit 2] [protein_id=YP_009137103.1] [location=complement(55803..58160)] [gbkey=CDS]
+46836 2358 0
+0 lcl|NC_001806.2_cds_YP_009137104.1_32 [gene=UL29] [locus_tag=HHV1gp00p46] [db_xref=GeneID:2703458] [protein=single-stranded DNA-binding protein] [protein_id=YP_009137104.1] [location=complement(58464..62054)] [gbkey=CDS]
+49194 3591 0
+0 lcl|NC_001806.2_cds_YP_009137105.1_33 [gene=UL30] [locus_tag=HHV1gp00p45] [db_xref=GeneID:2703462] [protein=DNA polymerase catalytic subunit] [protein_id=YP_009137105.1] [location=62807..66514] [gbkey=CDS]
+52785 3708 0
+0 lcl|NC_001806.2_cds_YP_009137106.1_34 [gene=UL31] [locus_tag=HHV1gp00p43] [db_xref=GeneID:2703350] [protein=nuclear egress lamina protein] [protein_id=YP_009137106.1] [location=complement(66459..67379)] [gbkey=CDS]
+56493 921 0
+0 lcl|NC_001806.2_cds_YP_009137107.1_35 [gene=UL32] [locus_tag=HHV1gp00p44] [db_xref=GeneID:2703352] [protein=DNA packaging protein UL32] [protein_id=YP_009137107.1] [location=complement(67372..69162)] [gbkey=CDS]
+57414 1791 0
+0 lcl|NC_001806.2_cds_YP_009137108.1_36 [gene=UL33] [locus_tag=HHV1gp00p42] [db_xref=GeneID:2703353] [protein=DNA packaging protein UL33] [protein_id=YP_009137108.1] [location=69161..69553] [gbkey=CDS]
+59205 393 0
+0 lcl|NC_001806.2_cds_YP_009137109.1_37 [gene=UL34] [locus_tag=HHV1gp00p41] [db_xref=GeneID:2703355] [protein=nuclear egress membrane protein] [protein_id=YP_009137109.1] [location=69633..70460] [gbkey=CDS]
+59598 828 0
+0 lcl|NC_001806.2_cds_YP_009137110.1_38 [gene=UL35] [locus_tag=HHV1gp00p40] [db_xref=GeneID:2703356] [protein=small capsid protein] [protein_id=YP_009137110.1] [location=70566..70904] [gbkey=CDS]
+60426 339 0
+0 lcl|NC_001806.2_cds_YP_009137111.1_39 [gene=UL36] [locus_tag=HHV1gp00p39] [db_xref=GeneID:2703357] [protein=large tegument protein] [protein_id=YP_009137111.1] [location=complement(71049..80468)] [gbkey=CDS]
+60765 9420 0
+0 lcl|NC_001806.2_cds_YP_009137112.1_40 [gene=UL37] [locus_tag=HHV1gp00p38] [db_xref=GeneID:2703358] [protein=tegument protein UL37] [protein_id=YP_009137112.1] [location=complement(80713..84084)] [gbkey=CDS]
+70185 3372 0
+0 lcl|NC_001806.2_cds_YP_009137113.1_41 [gene=UL38] [locus_tag=HHV1gp00p37] [db_xref=GeneID:2703359] [protein=capsid triplex subunit 1] [protein_id=YP_009137113.1] [location=84531..85928] [gbkey=CDS]
+73557 1398 0
+0 lcl|NC_001806.2_cds_YP_009137114.1_42 [gene=UL39] [locus_tag=HHV1gp00p36] [db_xref=GeneID:2703361] [protein=ribonucleotide reductase subunit 1] [protein_id=YP_009137114.1] [location=86443..89856] [gbkey=CDS]
+74955 3414 0
+0 lcl|NC_001806.2_cds_YP_009137115.1_43 [gene=UL40] [locus_tag=HHV1gp00p35] [db_xref=GeneID:24271470] [protein=ribonucleotide reductase subunit 2] [protein_id=YP_009137115.1] [location=89925..90947] [gbkey=CDS]
+78369 1023 0
+0 lcl|NC_001806.2_cds_YP_009137116.1_44 [gene=UL41] [locus_tag=HHV1gp00p34] [db_xref=GeneID:2703365] [protein=tegument host shutoff protein] [protein_id=YP_009137116.1] [location=complement(91167..92636)] [gbkey=CDS]
+79392 1470 0
+0 lcl|NC_001806.2_cds_YP_009137117.1_45 [gene=UL42] [locus_tag=HHV1gp00p33] [db_xref=GeneID:24271471] [protein=DNA polymerase processivity subunit] [protein_id=YP_009137117.1] [location=93112..94578] [gbkey=CDS]
+80862 1467 0
+0 lcl|NC_001806.2_cds_YP_009137118.1_46 [gene=UL43] [locus_tag=HHV1gp00p32] [db_xref=GeneID:2703408] [protein=envelope protein UL43] [protein_id=YP_009137118.1] [location=94799..96052] [gbkey=CDS]
+82329 1254 0
+0 lcl|NC_001806.2_cds_YP_009137119.1_47 [gene=UL44] [locus_tag=HHV1gp00p31] [db_xref=GeneID:2703410] [protein=envelope glycoprotein C] [protein_id=YP_009137119.1] [location=96312..97847] [gbkey=CDS]
+83583 1536 0
+0 lcl|NC_001806.2_cds_YP_009137120.1_48 [gene=UL45] [locus_tag=HHV1gp00p30] [db_xref=GeneID:24271472] [protein=membrane protein UL45] [protein_id=YP_009137120.1] [location=98033..98551] [gbkey=CDS]
+85119 519 0
+0 lcl|NC_001806.2_cds_YP_009137121.1_49 [gene=UL46] [locus_tag=HHV1gp00p29] [db_xref=GeneID:2703413] [protein=tegument protein VP11/12] [protein_id=YP_009137121.1] [location=complement(98797..100953)] [gbkey=CDS]
+85638 2157 0
+0 lcl|NC_001806.2_cds_YP_009137122.1_50 [gene=UL47] [locus_tag=HHV1gp00p28] [db_xref=GeneID:2703415] [protein=tegument protein VP13/14] [protein_id=YP_009137122.1] [location=complement(101036..103117)] [gbkey=CDS]
+87795 2082 0
+0 lcl|NC_001806.2_cds_YP_009137123.1_51 [gene=UL48] [locus_tag=HHV1gp00p27] [db_xref=GeneID:24271473] [protein=transactivating tegument protein VP16] [protein_id=YP_009137123.1] [location=complement(103608..105080)] [gbkey=CDS]
+89877 1473 0
+0 lcl|NC_001806.2_cds_YP_009137124.1_52 [gene=UL49] [locus_tag=HHV1gp00p25] [db_xref=GeneID:2703417] [protein=tegument protein VP22] [protein_id=YP_009137124.1] [location=complement(105487..106392)] [gbkey=CDS]
+91350 906 0
+0 lcl|NC_001806.2_cds_YP_009137125.1_53 [gene=UL49A] [locus_tag=HHV1gp00p26] [db_xref=GeneID:2703419] [protein=envelope glycoprotein N] [protein_id=YP_009137125.1] [location=complement(106719..106994)] [gbkey=CDS]
+92256 276 0
+0 lcl|NC_001806.2_cds_YP_009137126.1_54 [gene=UL50] [locus_tag=HHV1gp00p24] [db_xref=GeneID:2703421] [protein=deoxyuridine triphosphatase] [protein_id=YP_009137126.1] [location=107011..108126] [gbkey=CDS]
+92532 1116 0
+0 lcl|NC_001806.2_cds_YP_009137127.1_55 [gene=UL51] [locus_tag=HHV1gp00p23] [db_xref=GeneID:2703422] [protein=tegument protein UL51] [protein_id=YP_009137127.1] [location=complement(108278..109012)] [gbkey=CDS]
+93648 735 0
+0 lcl|NC_001806.2_cds_YP_009137128.1_56 [gene=UL52] [locus_tag=HHV1gp00p22] [db_xref=GeneID:2703423] [protein=helicase-primase primase subunit] [protein_id=YP_009137128.1] [location=109049..112225] [gbkey=CDS]
+94383 3177 0
+0 lcl|NC_001806.2_cds_YP_009137129.1_57 [gene=UL53] [locus_tag=HHV1gp00p21] [db_xref=GeneID:2703425] [protein=envelope glycoprotein K] [protein_id=YP_009137129.1] [location=112180..113196] [gbkey=CDS]
+97560 1017 0
+0 lcl|NC_001806.2_cds_YP_009137130.1_58 [gene=UL54] [locus_tag=HHV1gp00p20] [db_xref=GeneID:24271474] [protein=multifunctional expression regulator] [protein_id=YP_009137130.1] [location=113735..115273] [gbkey=CDS]
+98577 1539 0
+0 lcl|NC_001806.2_cds_YP_009137131.1_59 [gene=UL55] [locus_tag=HHV1gp00p19] [db_xref=GeneID:2703427] [protein=nuclear protein UL55] [protein_id=YP_009137131.1] [location=115497..116057] [gbkey=CDS]
+100116 561 0
+0 lcl|NC_001806.2_cds_YP_009137132.1_60 [gene=UL56] [locus_tag=HHV1gp00p18] [db_xref=GeneID:2703428] [protein=membrane protein UL56] [protein_id=YP_009137132.1] [location=complement(116222..116926)] [gbkey=CDS]
+100677 705 0
+0 lcl|NC_001806.2_cds_YP_009137133.1_61 [gene=RL2] [locus_tag=HHV1gp00p17] [db_xref=GeneID:2703390] [protein=contains a RING finger; disrupts ND10; proteasome-dependent degradation of several cellular proteins; involved in gene regulation; involved in cellular protein degradation; involved in latency] [protein_id=YP_009137133.1] [location=complement(join(120884..122487,122624..123290,124056..124112))] [gbkey=CDS]
+101382 2328 0
+0 lcl|NC_001806.2_cds_YP_009137134.1_62 [gene=RL1] [locus_tag=HHV1gp00p16] [db_xref=GeneID:2703396] [protein=neurovirulence protein ICP34.5] [protein_id=YP_009137134.1] [location=complement(125115..125861)] [gbkey=CDS]
+103710 747 0
+0 lcl|NC_001806.2_cds_YP_009137135.1_63 [gene=RS1] [locus_tag=HHV1gp00p15] [db_xref=GeneID:2703392] [protein=transcriptional regulator ICP4] [protein_id=YP_009137135.1] [location=complement(127235..131131)] [gbkey=CDS]
+104457 3897 0
+0 lcl|NC_001806.2_cds_YP_009137136.1_64 [gene=US1] [locus_tag=HHV1gp00p14] [db_xref=GeneID:2703435] [protein=regulatory protein ICP22] [protein_id=YP_009137136.1] [location=132647..133909] [gbkey=CDS]
+108354 1263 0
+0 lcl|NC_001806.2_cds_YP_009137137.1_65 [gene=US2] [locus_tag=HHV1gp00p13] [db_xref=GeneID:2703399] [protein=virion protein US2] [protein_id=YP_009137137.1] [location=complement(134056..134931)] [gbkey=CDS]
+109617 876 0
+0 lcl|NC_001806.2_cds_YP_009137138.1_66 [gene=US3] [locus_tag=HHV1gp00p12] [db_xref=GeneID:2703401] [protein=serine/threonine protein kinase US3] [protein_id=YP_009137138.1] [location=135225..136670] [gbkey=CDS]
+110493 1446 0
+0 lcl|NC_001806.2_cds_YP_009137139.1_67 [gene=US4] [locus_tag=HHV1gp00p11] [db_xref=GeneID:2703404] [protein=envelope glycoprotein G] [protein_id=YP_009137139.1] [location=136747..137463] [gbkey=CDS]
+111939 717 0
+0 lcl|NC_001806.2_cds_YP_009137140.1_68 [gene=US5] [locus_tag=HHV1gp00p10] [db_xref=GeneID:2703406] [protein=envelope glycoprotein J] [protein_id=YP_009137140.1] [location=137734..138012] [gbkey=CDS]
+112656 279 0
+0 lcl|NC_001806.2_cds_YP_009137141.1_69 [gene=US6] [locus_tag=HHV1gp00p09] [db_xref=GeneID:2703444] [protein=envelope glycoprotein D] [protein_id=YP_009137141.1] [location=138423..139607] [gbkey=CDS]
+112935 1185 0
+0 lcl|NC_001806.2_cds_YP_009137142.1_70 [gene=US7] [locus_tag=HHV1gp00p08] [db_xref=GeneID:2703446] [protein=envelope glycoprotein I] [protein_id=YP_009137142.1] [location=139789..140961] [gbkey=CDS]
+114120 1173 0
+0 lcl|NC_001806.2_cds_YP_009137143.1_71 [gene=US8] [locus_tag=HHV1gp00p07] [db_xref=GeneID:2703448] [protein=envelope glycoprotein E] [protein_id=YP_009137143.1] [location=141247..142899] [gbkey=CDS]
+115293 1653 0
+0 lcl|NC_001806.2_cds_YP_009137144.1_72 [gene=US8] [locus_tag=HHV1gp00p07] [db_xref=GeneID:2703448] [protein=membrane protein US8A] [protein_id=YP_009137144.1] [location=142748..143227] [gbkey=CDS]
+116946 480 0
+0 lcl|NC_001806.2_cds_YP_009137145.1_73 [gene=US9] [locus_tag=HHV1gp00p05] [db_xref=GeneID:2703452] [protein=membrane protein US9] [protein_id=YP_009137145.1] [location=143317..143589] [gbkey=CDS]
+117426 273 0
+0 lcl|NC_001806.2_cds_YP_009137146.1_74 [gene=US10] [locus_tag=HHV1gp00p02] [db_xref=GeneID:2703436] [protein=virion protein US10] [protein_id=YP_009137146.1] [location=complement(144162..145100)] [gbkey=CDS]
+117699 939 0
+0 lcl|NC_001806.2_cds_YP_009137147.1_75 [gene=US11] [locus_tag=HHV1gp00p03] [db_xref=GeneID:2703439] [protein=tegument protein US11] [protein_id=YP_009137147.1] [location=complement(144766..145251)] [gbkey=CDS]
+118638 486 0
+0 lcl|NC_001806.2_cds_YP_009137148.1_76 [gene=US12] [locus_tag=HHV1gp00p04] [db_xref=GeneID:2703441] [protein=TAP transporter inhibitor ICP47] [protein_id=YP_009137148.1] [location=complement(145316..145582)] [gbkey=CDS]
+119124 267 0
+0 lcl|NC_001806.2_cds_YP_009137149.1_77 [gene=RS1] [locus_tag=HHV1gp00p01] [db_xref=GeneID:2703391] [protein=transcriptional regulator ICP4] [protein_id=YP_009137149.1] [location=147066..150962] [gbkey=CDS]
+119391 3897 0
