@@ -8,8 +8,8 @@ library(BuenColors)
 # https://www.nature.com/articles/s41467-024-54668-2#Sec21
 
 # Import Genbank data
-hhv1 <- read.fasta("../data/hhv1-coding.txt", as.string = TRUE, forceDNAtolower = FALSE )
-hhv3 <- read.fasta("../data/hhv3-coding.txt", as.string = TRUE, forceDNAtolower = FALSE)
+hhv1 <- read.fasta("../../reference-genomes/HSV1-coding.fasta", as.string = TRUE, forceDNAtolower = FALSE )
+hhv3 <- read.fasta("../../reference-genomes/VZV-coding.fasta", as.string = TRUE, forceDNAtolower = FALSE)
 
 # Import data from nature comms paper
 subset_2herpes <- readxl::read_excel("../data/41467_2024_54668_MOESM5_ESM.xlsx")[,c(4,5,7)] %>% data.frame()
