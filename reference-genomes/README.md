@@ -12,3 +12,5 @@ kallisto index -k 31 HSV1-LATonly.fasta -i HSV1-LATonly.idx
 kallisto index -k 31 HSV1-coding.fasta -i HSV1-coding.idx
 kallisto index -k 31 VZV-coding.fasta -i VZV-coding.idx
 ```
+
+
