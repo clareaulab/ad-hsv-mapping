@@ -34,11 +34,12 @@ hhv3_df <- lapply(hhv3, function(x){
 # stich these all together
 mdf <- merge(merge(cc_subset_2herpes, hhv1_df, by = "id_hhv1"), hhv3_df, by = "id_hhv3")
 
-ggplot(mdf, aes(x = length.x, y = length.y)) + 
+ggplot(mdf %>% mutate(cc = length.x < 400 & length.y < 400), aes(x = length.x, y = length.y, color = cc)) + 
   geom_point() +
   scale_y_log10() + scale_x_log10() +
   labs(x = "Length of CDS - HSV-1", y = "Length of CDS - VZV") +
-  pretty_plot(fontsize = 8) + L_border() 
+  pretty_plot(fontsize = 8) + L_border()  +
+  scale_color_manual(values = c("grey", "firebrick")) + theme(legend.position = "none")
 
 (mdf %>% filter(length.x < 400 & length.y < 400))[,c("gene.x", "sequence.x")] %>% 
   write.table()
