@@ -39,10 +39,10 @@ ggplot(mdf %>% mutate(cc = length.x < 400 & length.y < 400), aes(x = length.x, y
   scale_y_log10() + scale_x_log10() +
   labs(x = "Length of CDS - HSV-1", y = "Length of CDS - VZV") +
   pretty_plot(fontsize = 8) + L_border()  +
-  scale_color_manual(values = c("grey", "firebrick")) + theme(legend.position = "none")
+  scale_color_manual(values = c("grey", "firebrick")) + theme(legend.position = "none") -> p1
 
-(mdf %>% filter(length.x < 400 & length.y < 400))[,c("gene.x", "sequence.x")] %>% 
-  write.table()
+cowplot::ggsave2(p1, file = "../output/gene_selection_for_logan.pdf", width = 2, height = 2)
+
 
 (mdf %>% filter(length.x < 400 & length.y < 400))[,c("gene.y", "sequence.y")] %>% 
   write.table()

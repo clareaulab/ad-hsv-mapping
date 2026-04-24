@@ -1,0 +1,77 @@
+Accession_ID,Gene,Kinetic_Class,Functional_Annotation
+lcl|NC_001806.2_cds_YP_009137073.1_1,RL1,aimmedate_early,Neurovirulence factor (ICP34.5); blocks PKR
+lcl|NC_001806.2_cds_YP_009137074.1_2,RL2,aimmedate_early,ICP0; E3 ubiquitin ligase and transactivator
+lcl|NC_001806.2_cds_YP_009137075.1_3,UL1,late,Glycoprotein L (gL); part of gH/gL entry complex
+lcl|NC_001806.2_cds_YP_009137076.1_4,UL2,early,Uracil-DNA glycosylase; DNA repair
+lcl|NC_001806.2_cds_YP_009137077.1_5,UL3,late,Nuclear egress protein
+lcl|NC_001806.2_cds_YP_009137078.1_6,UL4,late,Tegument protein
+lcl|NC_001806.2_cds_YP_009137079.1_7,UL5,early,DNA helicase/primase complex component
+lcl|NC_001806.2_cds_YP_009137080.1_8,UL6,late,Portal protein for DNA packaging
+lcl|NC_001806.2_cds_YP_009137081.1_9,UL7,late,Tegument protein
+lcl|NC_001806.2_cds_YP_009137082.1_10,UL8,early,DNA helicase/primase complex component
+lcl|NC_001806.2_cds_YP_009137083.1_11,UL9,early,Origin-binding protein (OBP)
+lcl|NC_001806.2_cds_YP_009137084.1_12,UL10,late,Glycoprotein M (gM); membrane protein
+lcl|NC_001806.2_cds_YP_009137085.1_13,UL11,late,Tegument protein; promotes envelopment
+lcl|NC_001806.2_cds_YP_009137086.1_14,UL12,early,Alkaline nuclease; DNA processing
+lcl|NC_001806.2_cds_YP_009137087.1_15,UL13,early,Viral protein kinase
+lcl|NC_001806.2_cds_YP_009137088.1_16,UL14,late,Tegument protein
+lcl|NC_001806.2_cds_YP_009137089.1_17,UL15,late,DNA terminase; DNA cleavage and packaging
+lcl|NC_001806.2_cds_YP_009137090.1_18,UL16,late,Tegument protein; capsid binding
+lcl|NC_001806.2_cds_YP_009137091.1_19,UL17,late,DNA packaging/cleavage protein
+lcl|NC_001806.2_cds_YP_009137092.2_20,UL18,late,Capsid protein VP23
+lcl|NC_001806.2_cds_YP_009137093.1_21,UL19,late,Major capsid protein VP5
+lcl|NC_001806.2_cds_YP_009137094.1_22,UL20,late,Virion egress/membrane fusion protein
+lcl|NC_001806.2_cds_YP_009137095.1_23,UL21,late,Tegument protein; microtubule transport
+lcl|NC_001806.2_cds_YP_009137096.1_24,UL22,late,Glycoprotein H (gH); viral entry
+lcl|NC_001806.2_cds_YP_009137097.1_25,UL23,early,Thymidine Kinase (TK); nucleotide metabolism
+lcl|NC_001806.2_cds_YP_009137098.1_26,UL24,late,Virion egress and growth
+lcl|NC_001806.2_cds_YP_009137099.1_27,UL25,late,Capsid vertex protein; DNA retention
+lcl|NC_001806.2_cds_YP_009137100.1_28,UL26,late,Capsid protease and scaffolding
+lcl|NC_001806.2_cds_YP_009137101.1_29,UL26.5,late,Major scaffold protein (VP22a)
+lcl|NC_001806.2_cds_YP_009137102.1_30,UL27,late,Glycoprotein B (gB); viral fusion
+lcl|NC_001806.2_cds_YP_009137103.1_31,UL28,late,Terminase subunit; DNA packaging
+lcl|NC_001806.2_cds_YP_009137104.1_32,UL29,early,Single-stranded DNA binding protein (ICP8)
+lcl|NC_001806.2_cds_YP_009137105.1_33,UL30,early,DNA Polymerase
+lcl|NC_001806.2_cds_YP_009137106.1_34,UL31,late,Nuclear egress complex (NEC)
+lcl|NC_001806.2_cds_YP_009137107.1_35,UL32,late,DNA cleavage and packaging
+lcl|NC_001806.2_cds_YP_009137108.1_36,UL33,late,DNA cleavage and packaging
+lcl|NC_001806.2_cds_YP_009137109.1_37,UL34,late,Nuclear egress complex (NEC)
+lcl|NC_001806.2_cds_YP_009137110.1_38,UL35,late,Capsid protein VP26
+lcl|NC_001806.2_cds_YP_009137111.1_39,UL36,late,Large tegument protein VP1/2
+lcl|NC_001806.2_cds_YP_009137112.1_40,UL37,late,Tegument protein; interacts with UL36
+lcl|NC_001806.2_cds_YP_009137113.1_41,UL38,late,Capsid protein VP19C
+lcl|NC_001806.2_cds_YP_009137114.1_42,UL39,early,Ribonucleotide reductase large subunit (ICP6)
+lcl|NC_001806.2_cds_YP_009137115.1_43,UL40,early,Ribonucleotide reductase small subunit
+lcl|NC_001806.2_cds_YP_009137116.1_44,UL41,early,Virion Host Shutoff (vhs) protein
+lcl|NC_001806.2_cds_YP_009137117.1_45,UL42,early,DNA polymerase processivity factor
+lcl|NC_001806.2_cds_YP_009137118.1_46,UL43,late,Envelope protein
+lcl|NC_001806.2_cds_YP_009137119.1_47,UL44,late,Glycoprotein C (gC); C3b receptor
+lcl|NC_001806.2_cds_YP_009137120.1_48,UL45,late,Envelope protein
+lcl|NC_001806.2_cds_YP_009137121.1_49,UL46,late,Tegument protein; VP11/12
+lcl|NC_001806.2_cds_YP_009137122.1_50,UL47,late,Tegument protein; VP13/14
+lcl|NC_001806.2_cds_YP_009137123.1_51,UL48,late,VP16; transcriptional activator protein
+lcl|NC_001806.2_cds_YP_009137124.1_52,UL49,late,Tegument protein VP22
+lcl|NC_001806.2_cds_YP_009137125.1_53,UL49A,late,Glycoprotein N (gN)
+lcl|NC_001806.2_cds_YP_009137126.1_54,UL50,early,dUTPase
+lcl|NC_001806.2_cds_YP_009137127.1_55,UL51,late,Tegument protein; involved in egress
+lcl|NC_001806.2_cds_YP_009137128.1_56,UL52,early,Primase-Helicase subunit
+lcl|NC_001806.2_cds_YP_009137129.1_57,UL53,late,Glycoprotein K (gK); viral egress
+lcl|NC_001806.2_cds_YP_009137130.1_58,UL54,aimmedate_early,ICP27; mRNA export regulator
+lcl|NC_001806.2_cds_YP_009137131.1_59,UL55,late,Uncharacterized late gene
+lcl|NC_001806.2_cds_YP_009137132.1_60,UL56,late,Vesicular transport/egress protein
+lcl|NC_001806.2_cds_YP_009137133.1_61,RL2,aimmedate_early,ICP0 (Repeat copy)
+lcl|NC_001806.2_cds_YP_009137134.1_62,RL1,aimmedate_early,ICP34.5 (Repeat copy)
+lcl|NC_001806.2_cds_YP_009137135.1_63,RS1,aimmedate_early,ICP4; primary transactivator
+lcl|NC_001806.2_cds_YP_009137136.1_64,US1,aimmedate_early,ICP22; transcriptional regulator
+lcl|NC_001806.2_cds_YP_009137137.1_65,US2,early,Virion morphogenesis protein
+lcl|NC_001806.2_cds_YP_009137138.1_66,US3,early,Viral serine/threonine protein kinase
+lcl|NC_001806.2_cds_YP_009137139.1_67,US4,late,Glycoprotein G (gG); chemokine binding
+lcl|NC_001806.2_cds_YP_009137140.1_68,US5,late,Glycoprotein J (gJ)
+lcl|NC_001806.2_cds_YP_009137141.1_69,US6,late,Glycoprotein D (gD); entry receptor ligand
+lcl|NC_001806.2_cds_YP_009137142.1_70,US7,late,Glycoprotein I (gI); cell-to-cell spread
+lcl|NC_001806.2_cds_YP_009137143.1_71,US8,late,Glycoprotein E (gE); cell-to-cell spread
+lcl|NC_001806.2_cds_YP_009137145.1_73,US9,late,Axonal transport protein
+lcl|NC_001806.2_cds_YP_009137146.1_74,US10,late,Tegument protein
+lcl|NC_001806.2_cds_YP_009137147.1_75,US11,late,RNA binding protein; blocks PKR
+lcl|NC_001806.2_cds_YP_009137148.1_76,US12,aimmedate_early,ICP47; blocks TAP peptide transport
+lcl|NC_001806.2_cds_YP_009137149.1_77,RS1,aimmedate_early,ICP4 (Repeat copy)
