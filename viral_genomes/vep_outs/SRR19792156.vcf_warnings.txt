@@ -1,0 +1,9 @@
+WARNING: Ignoring 'repeat_region' feature_type from /src/hsv_ref/NC_001806.2.gff3.gz GFF/GTF file. This feature_type is not supported in VEP.
+WARNING: Ignoring 'inverted_repeat' feature_type from /src/hsv_ref/NC_001806.2.gff3.gz GFF/GTF file. This feature_type is not supported in VEP.
+WARNING: Ignoring 'region' feature_type from /src/hsv_ref/NC_001806.2.gff3.gz GFF/GTF file. This feature_type is not supported in VEP.
+WARNING: Ignoring 'polyA_signal_sequence' feature_type from /src/hsv_ref/NC_001806.2.gff3.gz GFF/GTF file. This feature_type is not supported in VEP.
+WARNING: Ignoring 'TATA_box' feature_type from /src/hsv_ref/NC_001806.2.gff3.gz GFF/GTF file. This feature_type is not supported in VEP.
+WARNING: Ignoring 'sequence_feature' feature_type from /src/hsv_ref/NC_001806.2.gff3.gz GFF/GTF file. This feature_type is not supported in VEP.
+WARNING: Ignoring 'stem_loop' feature_type from /src/hsv_ref/NC_001806.2.gff3.gz GFF/GTF file. This feature_type is not supported in VEP.
+WARNING: Unable to determine biotype of rna-HHV1gp00s01
+WARNING: Unable to determine biotype of rna-HHV1gp00s02

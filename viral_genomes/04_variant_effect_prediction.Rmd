@@ -1,0 +1,316 @@
+---
+title: "BLANK"
+author: "Jacob Gutierrez"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output:
+  html_document:
+    code_folding: hide
+    df_print: paged
+    toc: true
+    toc_depth: 3
+    toc_float:
+      collapsed: true
+      smooth_scroll: false
+    theme: yeti
+subtitle: "BLANK"
+---
+
+```{r knitr setup chunk, echo = F}
+## Knitr setupchunk
+knitr::opts_chunk$set(fig.width=12, fig.height=8, echo=TRUE, warning=FALSE, message=FALSE, rows.print=20, eval = TRUE)
+```
+
+
+# Overview {.tabset .tabset-fade .tabset-pills}
+
+This script is expected to run on {BLANK} See sessionInfo for more info.
+
+
+## Purpose   
+
+
+> **Assess BLANK** 
+
+## Motivation
+
+## Research Questions
+
+
+# Analysis 
+
+### Libraries
+
+
+```{r libraries}
+library(data.table)
+library(ggpubr)
+library(stringr)
+library(tidyverse)
+```
+
+
+
+```{r}
+all_f  <- list.files("vep_outs/", pattern = ".vcf$",full.names = T)
+names(all_f) <- all_f %>% basename() %>% gsub(".vcf","",.)
+
+all_veps <- all_f %>% lapply(fread, skip = 31, col.names = c("#Uploaded_variation", "Location", "Allele", "Gene", "Feature", 
+"Feature_type", "Consequence", "cDNA_position", "CDS_position", 
+"Protein_position", "Amino_acids", "Codons", "Existing_variation", 
+"Extra"))
+
+
+all_veps <- all_veps %>% seq_along() %>% lapply(function(i) {
+  
+  all_veps[[i]] %>% mutate(sra = names(all_f)[i])
+
+})
+
+```
+
+
+
+```{r}
+miss_vep <- all_veps %>% lapply(function(df) {
+  df %>% filter(Consequence == "missense_variant")
+})
+```
+
+
+```{r}
+miss_vep <- miss_vep %>% Reduce("rbind",.)
+```
+
+
+```{r}
+catch_df <- miss_vep %>% select(`#Uploaded_variation`, sra,Feature) %>% group_by(`#Uploaded_variation`, sra) %>% summarize(Feature = paste(Feature,collapse="," )) %>% tidyr::pivot_wider(names_from = "sra", values_from = "Feature") %>% as.data.frame
+
+
+rownames(catch_df) <- catch_df[,1]
+catch_df[,1] <- NULL
+catch_df <- as.matrix(catch_df)
+```
+
+
+```{r}
+idx <- (!is.na(catch_df) )%>% rowSums()
+
+catch_df[idx == 3, ]
+interest <- catch_df[idx == 3, ] %>% reshape2::melt() %>% pull(value) %>% unique()
+
+var <- catch_df[idx == 3, ]  %>% rownames()
+```
+
+
+```{r}
+library(rtracklayer)
+hsv_gtf <- import("jg_NC_001806.2.gtf")
+```
+
+```{r}
+hsv_gtf %>% as.data.frame() %>% filter(transcript_id %in% interest)
+```
+
+
+
+```{r}
+miss_vep %>% filter(`#Uploaded_variation` %in% var[1])
+```
+
+## Excluding sad sample
+
+
+```{r}
+catch_df2 <- catch_df[, 2:3]
+
+idx <- (!is.na(catch_df2) )%>% rowSums()
+
+catch_df2[idx == 2, ]
+interest <- catch_df[idx == 2, ] %>% reshape2::melt() %>% pull(value) %>% unique() %>% strsplit(",") %>% unlist() %>% unique()
+
+var <- catch_df[idx == 2, ]  %>% rownames()
+```
+
+
+
+```{r}
+hsv_gtf %>% as.data.frame() %>% filter(transcript_id %in% interest)
+
+```
+
+
+
+```{r}
+twofer <- miss_vep %>% filter(`#Uploaded_variation` %in% var) %>% select(-sra) %>% distinct()
+twofer
+```
+
+
+## ESM Variatn 
+
+
+```{r}
+esm_out <- fread("esm_code/NC_001806.2_esm_scores.csv")
+```
+
+
+
+```{r, fig.height =24}
+esm_out %>% gghistogram(x = "esm_score", facet.by = "seq_id", ncol = 4, scales = "free_y")
+```
+
+
+
+
+```{r}
+head(esm_out)
+```
+
+
+```{r}
+esm_out$clean_id <- esm_out$seq_id %>% gsub("lcl\\|NC_001806.2_prot_","",.) %>% gsub("_[[:digit:]]+$","",.)
+esm_out %>% distinct(clean_id)
+```
+
+
+```{r}
+exon_df <- as.data.frame(hsv_gtf) %>% filter(gbkey == "exon")
+
+simple_map <- exon_df %>% select(protein_id,Parent,gene_id)
+pro_map <- simple_map$Parent
+names(pro_map) <- simple_map$protein_id
+
+in_map <- names(pro_map)
+names(in_map) <- pro_map
+```
+
+
+
+```{r}
+esm_out$gene_id <- pro_map[esm_out$clean_id]
+```
+
+
+
+```{r, fig.height =24}
+esm_out %>% gghistogram(x = "esm_score", facet.by = "clean_id", ncol = 4, scales = "free_y") + geom_vline(xintercept = c(-1,1), linetype = "dashed", color = "firebrick4")
+
+```
+
+
+```{r}
+esm_out %>% head()
+```
+
+
+```{r}
+new_twofer <- twofer %>% tidyr::separate(col=Amino_acids, into = c("ref","alt"),sep = "/", remove = F) %>% mutate(mut_name = paste0(ref,Protein_position,alt))
+
+new_twofer$clean_id <- in_map[new_twofer$Feature]
+
+
+simple_twofer <- new_twofer %>% select(mut_name, clean_id) %>% mutate(flag = "is_snv")
+#highlight_mutants <- esm_out %>% filter(mut_name %in% new_twofer$esm_map)
+#highlight_mutants <- esm_out %>% filter(mut_name %in% new_twofer$esm_map)
+highlight_mutants <- left_join(esm_out, simple_twofer) %>% filter(flag == "is_snv")
+
+highlight_mutants <- left_join(highlight_mutants,simple_map %>% dplyr::rename(clean_id = protein_id, gene_id = Parent, gene_name =gene_id))
+
+```
+
+
+```{r}
+highlight_mutants %>% dim()
+highlight_mutants %>% count(gene_name)
+```
+This resulted in a total of 339 high-confidence HSV-1 derived variants with predicted protein-coding changes from VEP. 
+
+
+```{r}
+# esm_stats <- esm_out %>% group_by(gene_id) %>% summarize(q99 = quantile(esm_score, probs = .01),q90 = quantile(esm_score, probs = .1),
+#                                              q75 = quantile(esm_score, probs = .25),mean = mean(esm_score), median = median(esm_score),
+#                                              q25 = quantile(esm_score, probs = .75), q10 = quantile(esm_score, probs = .90))
+
+esm_stats <- esm_out %>% group_by(gene_id) %>% summarize(q75 = quantile(esm_score, probs = .25),
+                                                         mean = mean(esm_score),
+                                             q25 = quantile(esm_score, probs = .75))
+
+esm_stats_wide <- esm_stats
+esm_stats <- esm_stats %>% tidyr::pivot_longer(cols = q75:q25, names_to = "perc", values_to = "xint")
+
+esm_stats <- left_join(esm_stats,simple_map %>% dplyr::rename(gene_id = Parent, gene_name =gene_id))
+```
+
+
+```{r, fig.height =24}
+# plt <- esm_out %>% gghistogram(x = "esm_score", facet.by = "gene_id", ncol = 5, scales = "free_y") + geom_vline(data = highlight_mutants, aes(xintercept = esm_score), linetype = "dashed", color = "firebrick4") + geom_vline(xintercept = c(-1,1), color = "black") +ggtitle("HSV1 proteins ESM score histograms\nscRNA Brain Mutants scores as red bars")
+
+#esm_stats
+
+plt <- esm_out %>% gghistogram(x = "esm_score", facet.by = "gene_id", ncol = 5, scales = "free_y") + geom_vline(data = highlight_mutants, aes(xintercept = esm_score), color = "firebrick4") + geom_vline(data = esm_stats, aes(xintercept = xint), color = "black") +ggtitle("HSV1 proteins ESM score histograms\nscRNA Brain Mutants scores as red bars")
+
+ggsave("../output/hsv1_esm_predicted.png",plot=plt,width = 24, height = 24)
+
+
+
+plt <- esm_out %>% filter(gene_id %in% highlight_mutants$gene_id) %>% gghistogram(x = "esm_score", facet.by = "gene_id", ncol = 4, scales = "free_y") + geom_vline(data = highlight_mutants, aes(xintercept = esm_score), color = "firebrick4") + geom_vline(data = esm_stats%>% filter(gene_id %in% highlight_mutants$gene_id), aes(xintercept = xint), color = "black") +ggtitle("HSV1 proteins ESM score histograms\nscRNA Brain Mutants scores as red bars")
+plt
+ggsave("../output/hsv1_esm_predicted_subset.png",plot=plt,width = 18, height = 12)
+
+
+```
+
+
+```{r}
+library(BuenColors)
+
+plt_df <-  esm_out %>% filter(gene_id %in% highlight_mutants$gene_id) 
+plt_df <- left_join(plt_df,simple_map %>% dplyr::rename(gene_id = Parent, gene_name =gene_id))
+
+sub_plt <- esm_stats%>% filter(gene_id %in% highlight_mutants$gene_id)
+
+#highlight_mutants ## added genename
+gene_ord <- c("RL2", "RS1", "US1", "US2", "US3", 
+"US4", "US5", "US6", "US7", "US8","US10", "US11", "US12")
+plt_df <- plt_df %>% mutate(gene_name = factor(gene_name, levels = gene_ord))
+highlight_mutants <- highlight_mutants %>% mutate(gene_name = factor(gene_name, levels = gene_ord))
+
+# + geom_vline(data = sub_plt, aes(xintercept = xint), color = "black", linetype = "dashed")
+plt <- plt_df%>% gghistogram(x = "esm_score", facet.by = "gene_name", ncol = 7, scales = "free_y") + geom_vline(data = highlight_mutants, aes(xintercept = esm_score), color = "firebrick4") + labs(y= "nCount", x="ESM Score") + pretty_plot(fontsize  = 6)
+plt
+cowplot::ggsave2("output/hsv1_esm_predicted_subset_genename.pdf",plot=plt,width = 5, height = 2)
+
+
+```
+
+
+
+```{r}
+highlight_mutants <- left_join(highlight_mutants , esm_stats_wide)
+
+smol_muts <- highlight_mutants %>% filter(esm_score <= q75)
+```
+
+
+
+```{r}
+#use_mut <- highlight_mutants %>% filter(esm_score < -9)
+use_mut <- highlight_mutants %>% filter(esm_score <= q75)
+
+use_mut <- left_join(use_mut,simple_map %>% dplyr::rename(gene_id = Parent, gene_name =gene_id))
+use_mut
+#fwrite(use_mut, "../output/esm_strong_mutants_2.csv")
+
+```
+
+
+
+
+# SessionInfo
+<details>
+  <summary>Click for SessionInfo</summary>
+```{r R info}
+sessionInfo()
+```
+</details> 
+
